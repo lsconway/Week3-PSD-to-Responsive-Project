@@ -1,0 +1,162 @@
+//styles for header, including nav
+
+header {
+	background-image: url(../images/hero.jpg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	padding: 80px 0 250px 0;
+}
+
+.navContainer {
+	display: flex;
+	justify-content: space-between;
+}
+
+.logoContainer {
+	display: flex;
+	justify-content: flex-start;
+}
+
+.navBar {
+	display: flex;
+	justify-content: flex-end;
+	position: relative;
+}
+
+.nav1 {
+	display: flex;
+	justify-content: flex-end;
+	flex-direction: row;
+	font-family: $mainfont;
+	font-size: 14px;
+	text-transform: uppercase;
+
+	@media (max-width: $screen-md) {
+		flex-direction: column;	
+		display: none;
+		text-align: right;
+		position: absolute;
+		right: 60px;
+		margin: 0;
+	}
+}
+
+.nav1 li {
+	list-style-type: none;
+	padding-left: 27px;
+
+	@media (max-width: $screen-md) {
+		margin-bottom: 10px;
+	}
+}
+
+.nav1 a {
+	text-decoration: none;
+	color: white;
+	border-bottom: 2px solid transparent;
+	padding-bottom: 20px;
+	transition: border-bottom 0.7s;
+
+	@media (max-width: $screen-md) {
+		font-size: 18px;
+		padding-bottom: 0;
+	}
+}
+
+.nav1 a:hover {
+	border-bottom: 2px solid $accentcolor;
+}
+
+.nav1 i {
+	color: white;
+	cursor: pointer;
+}
+
+.hamburger {
+	display: none;
+	cursor: pointer;
+	text-align: right;
+	position: absolute;
+	right: 10px;
+
+	@media (max-width: $screen-md) {
+			display: block;
+			color: white;
+		}
+}
+
+.visible {
+	display: block;
+}
+
+h2 {
+	font-family: $mainfont;
+	font-size: 90px;
+	color: white;
+	text-align: center;
+	margin: 0;
+	padding-top: 180px;
+	line-height: 0.9;
+
+	@media (max-width: $screen-md) {
+		font-size: 50px;
+	}
+
+	@media (max-width: 600px) {
+		font-size: 30px;
+	}
+
+	@media (max-width: $screen-sm) {
+		font-size: 25px;
+
+	}
+}
+
+h2 span {
+	font-size: 140px;
+	color: white;
+
+	@media (max-width: $screen-md) {
+		font-size: 110px;
+	}
+
+	@media (max-width: 600px) {
+		font-size: 80px
+	}
+
+	@media (max-width: $screen-sm) {
+		font-size: 60px;
+	}
+}
+
+.subheading {
+	font-family: $secondfont;
+	font-size: 18px;
+	font-style: italic;
+	color: $secondarycolor;
+	text-align: center;
+	margin: 0;
+}
+
+.enterButton {
+	border: 1px solid white;
+	border-radius: 50%;
+	margin: 0 auto;
+	width: 90px;
+	height: 90px;
+	text-align: center;
+	padding-top: 30px;
+	margin-top: 50px;
+	cursor: pointer;
+
+	@media (max-width: $screen-sm) {
+		display: none;
+	}
+}
+
+.enterButton a {
+	color: white;
+	font-family: $secondfont;
+	text-decoration: none;
+	font-size: 18px;
+}

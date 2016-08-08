@@ -1,0 +1,131 @@
+.ourWorks {
+	padding-top: 90px;
+}
+.workNav {
+	margin: 0 auto;
+	padding-bottom: 50px;
+}
+
+.workNav ul {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.workNav li {
+	list-style-type: none;
+	text-align: center;
+	margin: 0;
+	padding: 15px 20px;
+	text-transform: uppercase;
+	font-family: $mainfont;
+	font-size: 10px;
+	margin: 0 10px;
+	color: red;
+	border: 1px solid $primarycolor;
+	transition: all 0.3s;
+
+	@media (max-width: $screen-md) {
+		margin-bottom: 10px;
+	}
+}
+
+.workNav a {
+	text-decoration: none;
+	color: $primarycolor;
+}
+
+.workNav li:hover {
+	border: 1px solid $accentcolor;
+}
+
+.workImages {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.workImg {
+	width: 25%;
+	height: 250px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+
+	@media (max-width: $screen-md) {
+		width: 50%;
+	}
+
+	@media (max-width: $screen-sm) {
+		width: 50%;
+	}
+
+}
+
+.img1 {
+	background-image: url(../images/works1.jpg);
+
+	@media (max-width: $screen-md) {
+		display: none;
+	}
+
+	@media (max-width: $screen-sm) {
+		display: none;
+	}
+}
+
+.img2 {
+	background-image: url(../images/works2.jpg);
+	@media (max-width: $screen-md) {
+		display: none;
+	}
+	@media (max-width: $screen-sm) {
+		display: none;
+	}
+}
+
+.img3 {
+	background-image: url(../images/works3.jpg);
+
+	@media (max-width: $screen-md) {
+		display: none;
+	}
+	@media (max-width: $screen-sm) {
+		display: none;
+	}
+}
+
+.img4 {
+	background-image: url(../images/works4.jpg);
+
+	@media (max-width: $screen-md) {
+		display: none;
+	}
+	@media (max-width: $screen-sm) {
+		display: none;
+	}
+}
+
+.img5 {
+	background-image: url(../images/works5.jpg);
+	@media (max-width: $screen-sm) {
+		display: none;
+	}
+}
+
+.img6 {
+	background-image: url(../images/works6.jpg);
+	@media (max-width: $screen-sm) {
+		display: none;
+	}
+}
+
+.img7 {
+	background-image: url(../images/works7.jpg);
+}
+
+.img8 {
+	background-image: url(../images/works8.jpg);
+}

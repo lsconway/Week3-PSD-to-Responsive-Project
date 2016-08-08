@@ -1,0 +1,33 @@
+.ourPartners {
+	padding-top: 90px;
+}
+
+.partnersLogos {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.partnerImg {
+	width: calc(25% - 20px);
+	border: 1px solid #ececec;
+	text-align: center;
+	padding: 25px;
+	margin: 0 10px 20px 10px;
+
+	@media (max-width: $screen-md){
+		width: 30%;
+		margin: 10px;
+	}
+
+	@media (max-width: $screen-sm) {
+		width: 40%;
+	}
+}
+
+.mainButton {
+	display: block;
+	margin: 45px auto 100px auto;
+}
+

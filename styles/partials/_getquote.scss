@@ -1,0 +1,38 @@
+.getQuote {
+	background-color: $darkbackground;
+}
+
+.quote {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+
+	@media (max-width: $screen-md) {
+		flex-direction: column;
+		text-align: center;
+	}
+}
+
+.quote p {
+	font-family: $secondfont;
+	font-size: 30px;
+	color: white;
+}
+
+
+.quote span {
+	color: $accentcolor;
+}
+
+.quoteButton button {
+	background-color: $accentcolor;
+	border: none;
+	color: white;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	font-family: $mainfont;
+	font-size: 12px;
+	padding: 20px 35px;
+	margin: 25px 0px;
+}
+

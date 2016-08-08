@@ -1,0 +1,90 @@
+.whatClientsSay {
+	padding-top: 120px;
+	text-align: center;
+}
+
+.clientImages {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.client {
+	width: 145px;
+	height: 145px;
+	margin: 0 15px;
+
+	@media (max-width: 575px){
+		width: 100px;
+		height: 100px;
+	}
+
+	@media (max-width: 420px) {
+		width: 70px;
+		height: 70px;
+	}
+}
+
+.clientImages img {
+	padding: 0 5px;
+}
+
+
+.client1 {
+	background-image: url("../images/client1.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.client2 {
+	background-image: url("../images/client2.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.client3 {
+	background-image: url("../images/client3.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.description {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.description p {
+	font-family: $secondfont;
+	font-size: 18px;
+	color: $secondarycolor;
+	text-align: center;
+	width: 70%;
+	padding: 40px 0;
+	line-height: 1.5;
+}
+
+.clientsSub {
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	text-align: center;
+}
+
+.clientsSub h4 {
+	font-family: $mainfont;
+	text-transform: uppercase;
+	color: $primarycolor;
+}
+
+.clientsSub p {
+	margin: 0 auto;
+	padding: 0;
+}
+
+.clientsSub img {
+	display: block;
+	margin: 0 auto;
+	padding: 25px 0 90px 0;
+
+}

@@ -1,0 +1,151 @@
+
+.welcomeContainer {
+	display: flex;
+	flex-direction: row;
+}
+
+.welcomeText {
+	display: flex;
+	flex-direction: column;
+	width: 70%;
+	position: relative;
+
+	@media (max-width: $screen-lg) {
+		text-align: center;
+		width: 100%;
+	}
+
+}
+
+.welcomeIconsContainer {
+	display: flex;
+	flex-direction: column;
+}
+
+.welcomeIcons {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin: 50px 0px;
+
+	@media (max-width: $screen-lg){
+		flex-direction: column;
+		margin: 10px 0;
+	}
+
+	@media (max-width: $screen-lg) {
+		align-items: center;
+	}
+}
+
+.icon {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+
+	@media (max-width: $screen-lg) {
+		margin: 15px 0;
+	}
+
+}
+
+.icon p {
+	margin: 0;
+	text-transform: uppercase;
+	font-family: $mainfont;
+	font-size: 14px;
+	color: $primarycolor;
+	padding-left: 30px;
+}
+
+.outerImg {
+	border: 1px solid $secondarycolor;
+	border-radius: 50%;
+	display: flex;
+	height: 70px;
+	width: 70px;
+}
+
+.outerImg img {
+	margin: auto;
+
+}
+
+aside {
+	display: block;
+	width: 30%;
+	text-align: right;
+	padding: 120px 100px 0px 120px;
+	@media (max-width: $screen-md) {
+		padding: 120px 100px 0 20px;
+	}
+
+	@media (max-width: $screen-lg) {
+		display: none;
+	}
+}
+
+.welcomeText .italic {
+	margin-top: 120px;
+}
+
+h1 {
+	font-family: $mainfont;
+	font-weight: bold;
+	font-size: 24px;	
+	text-transform: uppercase;
+
+	@media (max-width: $screen-md) {
+		font-size: 20px;
+		margin: 5px 0;
+	}
+}
+
+.welcomeContent {
+	font-family: $mainfont;
+	font-size: 14px;
+	color: $secondarycolor;
+	line-height: 2;
+
+	@media (max-width: $screen-md) {
+		margin-bottom: 0;
+		font-size: 12px;
+	}
+}
+
+.moreServicesButton {
+	position: relative;
+}
+
+.serviceButton {
+	font-family: $mainfont;
+	font-size: 14px;
+	text-transform: uppercase;
+	border: 1px solid $primarycolor;
+	color: $primarycolor;
+	padding: 28px 32px;
+	letter-spacing: 5px;
+	background-color: white;
+	transition: all 0.3s;
+
+	@media (max-width: $screen-sm) {
+		font-size: 12px;
+		display: flex;
+		flex-align: center;
+		margin: 50px 0 0 0;
+		position: relative;
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+	}
+}
+
+.serviceButton:hover {
+	background-color: $primarycolor;
+	color: white;
+}
+
+
+
+
+

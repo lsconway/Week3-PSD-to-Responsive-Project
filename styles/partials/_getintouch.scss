@@ -1,0 +1,120 @@
+.getInTouch {
+	padding-top: 90px;
+}
+
+.form {
+	background-color: $formbackground;
+}
+
+.formIcons {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	padding: 90px 0;
+
+	@media (max-width: $screen-md2) {
+		flex-direction: column;	
+		margin: 0 auto;
+		align-items: center;
+		justify-content: center;
+	}
+}
+
+.iconBox {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+	width: 350px;
+
+	@media (max-width: $screen-md2){
+		margin-bottom: 10px;
+	}
+}
+
+.iconBox i {
+	color: $accentcolor;
+	margin: auto;
+}
+
+
+.iconCircle {
+	border: 1px solid $secondarycolor;
+	border-radius: 50%;
+	display: flex;
+	height: 100px;
+	width: 100px;
+}
+
+
+
+.contactText {
+	display: flex;
+	flex-direction: column;
+	color: #fff;
+	font-family: $secondfont;
+	font-size: 16px;
+
+}
+
+.contactText p {
+	margin: 0 30px;
+}
+
+.infoLine {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 100%;
+
+	@media (max-width: $screen-md) {
+		flex-direction: column;
+	}
+}
+
+.infoLine input, .messagebox {
+	width: 33.3%;
+	font-family: $secondfont;
+	font-size: 12px;
+	text-transform: uppercase;
+	background-color: $formbackground;
+	color: white;
+	border: none;
+	border-bottom: 1px solid white;
+	margin-right: 30px;
+	padding: 20px 0px;
+
+	@media (max-width: $screen-md) {
+		width: 100%;
+	}
+}
+
+.messagebox {
+	width: 100%;
+	margin-top: 60px;
+	padding-bottom: 120px;
+}
+
+.infoLine input:last-child {
+	margin-right: 0px;
+}
+
+.submitBox {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.submit {
+	background-color: $formbackground;
+	color: white;
+	font-family: $mainfont;
+	font-size: 14px;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	padding: 20px 30px;
+	border: 1px solid white;
+	margin: 40px 0 100px 0;
+}
+
+
