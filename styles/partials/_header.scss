@@ -20,7 +20,6 @@ header {
 .navBar {
 	display: flex;
 	justify-content: flex-end;
-	position: relative;
 }
 
 .nav1 {
@@ -35,18 +34,30 @@ header {
 		flex-direction: column;	
 		display: none;
 		text-align: right;
-		position: absolute;
 		right: 60px;
 		margin: 0;
+		background: rgba(0,0,0,0.9);
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100vh;
+		position: fixed;
+		z-index: 300;
 	}
+
+
 }
 
 .nav1 li {
 	list-style-type: none;
 	padding-left: 27px;
+	transition: 0.3s all;
 
 	@media (max-width: $screen-md) {
-		margin-bottom: 10px;
+		text-align: center;
+		position: relative;
+		padding: 10px 0;
+		top: 100px;
 	}
 }
 
@@ -58,7 +69,8 @@ header {
 	transition: border-bottom 0.7s;
 
 	@media (max-width: $screen-md) {
-		font-size: 18px;
+		text-align: center;
+		font-size: 40px;
 		padding-bottom: 0;
 	}
 }
@@ -76,18 +88,22 @@ header {
 	display: none;
 	cursor: pointer;
 	text-align: right;
-	position: absolute;
 	right: 10px;
 
 	@media (max-width: $screen-md) {
 			display: block;
 			color: white;
+			z-index: 400;
 		}
 }
 
 .visible {
 	display: block;
 }
+
+
+
+
 
 h2 {
 	font-family: $mainfont;

@@ -22,20 +22,21 @@
 
 				<nav class="navBar">
 					<ul class="nav1">
-						<li><a href="#">Home</a></li>
-						<li><a href="#">Demos</a></li>
-						<li><a href="#">Pages</a></li>
-						<li><a href="#">Portfolio</a></li>
-						<li><a href="#">Shop</a></li>
-						<li><a href="#">Blog</a></li>
-						<li><i class="fa fa-shopping-cart" aria-hidden="true"></i></li>
-						<li><i class="fa fa-search" aria-hidden="true"></i></li>
+						<li><a href="#welcome">About</a></li>
+						<li><a href="#portfolio">Portfolio</a></li>
+						<li><a href="#team">Team</a></li>
+						<li><a href="#blog">Blog</a></li>
+						<li><a href="#pricing">Pricing</a></li>
+						<li><a href="#contact">Contact</a></li>
 					</ul>
-					<div class="hamburger">
-						<i class="fa fa-bars fa-2x" aria-hidden="true"></i>
-					</div>
+					
 				</nav>
-			</div>
+
+				<div class="hamburger">
+					<i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+				</div>
+		
+		</div>
 
 			<div class="title">
 				<h2>We Deliver <span>Excellence</span></h2>
@@ -89,7 +90,7 @@
 		</div> <!--wrapper ends-->
 	</section> <!--welcome ends-->
 
-	<section class="ourWorks">
+	<section class="ourWorks" id="portfolio">
 		<div class="titleBox">
 			<h3>Our Works</h3>
 			<img src="images/work.png">
@@ -221,7 +222,7 @@
 			</div><!--wrapper ends-->
 	</section> <!--numbers ends-->
 
-	<section class="meetOurTeam">
+	<section class="meetOurTeam" id="team">
 		<div class="wrapper">
 			<div class="titleBox">
 				<h3>Meet Our Team</h3>
@@ -302,7 +303,7 @@
 		</div>
 	</section> <!--getQuote ends-->
 
-	<section class="latestBlog">
+	<section class="latestBlog" id="blog">
 			<div class="titleBox">
 				<h3>Latest Blogs</h3>
 				<img src="images/work.png">
@@ -352,7 +353,7 @@
 			</div> <!--blogposts ends-->
 	</section> <!--blog ends-->
 
-	<section class="pricingPlans">
+	<section class="pricingPlans" id="pricing">
 		<div class="wrapper">
 			<div class="titleBox">
 				<h3>Pricing Plans</h3>
@@ -440,7 +441,7 @@
 		</div>
 	</section>
 
-	<section class="getInTouch">
+	<section class="getInTouch" id="contact">
 		<div class="wrapper">
 			<div class="titleBox">
 				<h3>Get In Touch</h3>
@@ -635,12 +636,34 @@
 
 	<script>
 		$(function(){
+
 			$('.hamburger').on('click', function(){
-
 				$('.nav1').slideToggle();
-
-
 			});
+			
+			$('.nav1 a').on('click', function(){
+				var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0)
+				var h = Math.max(document.documentElement.clientHeight, window.innerHeight || 0)
+
+
+				if (w < 800) {
+					$('.nav1').slideToggle();					
+				}
+			});
+
+
+			$('a[href*="#"]:not([href="#"])').click(function() {
+					if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+					var target = $(this.hash);
+					target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+						if (target.length) {
+						   $('html, body').animate({
+							scrollTop: target.offset().top
+						}, 500);
+						   return false;
+						}
+					}
+			 	});
 		});
 
 	</script>	
